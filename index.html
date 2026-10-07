@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reshma Devi Sri Penta – Portfolio. Diploma student &amp; aspiring developer at Aditya Polytechnic College, Surampalem." />
+  <meta name="keywords" content="Reshma Devi Sri Penta, portfolio, developer, diploma student, Aditya Polytechnic College, Python, web development" />
+  <meta name="author" content="Reshma Devi Sri Penta" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title"       content="Reshma Devi Sri Penta | Portfolio" />
+  <meta property="og:description" content="Personal portfolio of Reshma Devi Sri Penta – Diploma student &amp; aspiring developer." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:image"       content="profile.jpg" />
+
+  <title>Reshma Devi Sri Penta | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      #preloader { display: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ===================== PAGE PRELOADER ===================== -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">R<span>.</span></div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Reshma Devi Sri Penta – Home">
+        <span class="logo-first">Reshma</span><span class="logo-last">.dev</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="#home"           class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"          class="nav-link"        role="menuitem">About</a></li>
+        <li role="none"><a href="#education"      class="nav-link"        role="menuitem">Education</a></li>
+        <li role="none"><a href="#skills"         class="nav-link"        role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects"       class="nav-link"        role="menuitem">Projects</a></li>
+        <li role="none"><a href="#certifications" class="nav-link"        role="menuitem">Certifications</a></li>
+        <li role="none"><a href="#contact"        class="nav-link"        role="menuitem">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
+    <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+
+    <div class="hero-container">
+
+      <!-- Text Side -->
+      <div class="hero-text">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">
+          Reshma Devi Sri<br />
+          <span class="accent-text">Penta</span>
+        </h1>
+        <div class="hero-role-wrapper" aria-live="polite" aria-atomic="true">
+          <span class="role-prefix">I am a&nbsp;</span>
+          <span class="hero-role" id="typingRole"></span>
+          <span class="cursor-blink" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-intro">
+          <!--
+            ╔══════════════════════════════════════════════════╗
+            ║  PLACEHOLDER — Replace with your introduction    ║
+            ╚══════════════════════════════════════════════════╝
+            Example:
+            "A passionate Diploma student with a strong interest
+             in web development and data analytics, turning ideas
+             into real-world solutions one line of code at a time."
+          -->
+          <span class="placeholder-text">✏️ [Write your short introduction here — 2 to 3 sentences about yourself and your passion for technology.]</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="viewProjectsBtn">
+            <i class="fas fa-code"></i> View My Projects
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contactBtn">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+          <a href="#" class="btn btn-ghost" id="resumeBtn" title="Download Resume">
+            <!-- Replace # with your resume PDF path, e.g. href="resume.pdf" download -->
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+        <div class="hero-social" aria-label="Social media links">
+          <a href="#" id="heroGithub"   class="social-icon" aria-label="GitHub"   title="GitHub"   target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" id="heroLinkedin" class="social-icon" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:" id="heroEmail" class="social-icon" aria-label="Email" title="Send Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Image Side -->
+      <div class="hero-image-wrapper" aria-hidden="true">
+        <div class="hero-image-ring ring-1"></div>
+        <div class="hero-image-ring ring-2"></div>
+        <div class="hero-image-ring ring-3"></div>
+        <div class="hero-image-frame">
+          <!--
+            Replace profile.jpg with your actual photo.
+            Recommended: square image, minimum 400×400 px.
+          -->
+          <img
+            src="profile.jpg"
+            alt="Reshma Devi Sri Penta"
+            class="hero-photo"
+            id="profilePhoto"
+          />
+        </div>
+        <div class="hero-badge badge-1">
+          <i class="fas fa-laptop-code"></i>
+          <span>Developer</span>
+        </div>
+        <div class="hero-badge badge-2">
+          <i class="fas fa-graduation-cap"></i>
+          <span>3rd Year Diploma</span>
+        </div>
+      </div>
+
+    </div><!-- /hero-container -->
+
+    <a href="#about" class="scroll-down-arrow" aria-label="Scroll to About section">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about-section" id="about" aria-label="About Me">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Image Column -->
+        <div class="about-image-col" data-aos="fade-right">
+          <div class="about-image-container">
+            <img
+              src="profile.jpg"
+              alt="Reshma Devi Sri Penta – About"
+              class="about-photo"
+            />
+            <div class="about-experience-badge">
+              <span class="badge-number">3rd</span>
+              <span class="badge-label">Year Student</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content-col" data-aos="fade-left">
+          <h3 class="about-subtitle">Passionate Learner &amp; Developer</h3>
+
+          <p class="about-text">
+            <!-- PLACEHOLDER: Replace with your real About Me paragraph -->
+            <span class="placeholder-text">✏️ [Write your About Me here — describe who you are, your passion for technology, and what motivates you to build things. Keep it authentic and professional.]</span>
+          </p>
+          <p class="about-text">
+            <!-- PLACEHOLDER: Second paragraph (optional) -->
+            <span class="placeholder-text">✏️ [Add a second paragraph here — mention your interests, what you are currently learning, your projects, or any relevant hobbies.]</span>
+          </p>
+
+          <!-- Quick Detail Cards -->
+          <div class="about-details-grid">
+            <div class="detail-item">
+              <span class="detail-label"><i class="fas fa-user"></i> Name</span>
+              <span class="detail-value">Reshma Devi Sri Penta</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label"><i class="fas fa-code-branch"></i> Branch</span>
+              <span class="detail-value placeholder-inline">[YOUR BRANCH]</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label"><i class="fas fa-university"></i> College</span>
+              <span class="detail-value">Aditya Polytechnic College</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+              <span class="detail-value placeholder-inline">[YOUR LOCATION]</span>
+            </div>
+            <div class="detail-item detail-full">
+              <span class="detail-label"><i class="fas fa-bullseye"></i> Career Goal</span>
+              <span class="detail-value placeholder-inline">[YOUR CAREER GOAL — e.g., "To become a full-stack developer and contribute to innovative software solutions."]</span>
+            </div>
+          </div>
+
+          <!-- Stats Row -->
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Skills</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+            <a href="#" class="btn btn-outline" download><i class="fas fa-file-pdf"></i> My Resume</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education-section" id="education" aria-label="Education">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">Education <span class="accent-text">Journey</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- School -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot" aria-hidden="true"><i class="fas fa-school"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="tl-header-left">
+                <span class="tl-type">Secondary Education</span>
+                <h3 class="tl-institution">ZPPH School</h3>
+                <p class="tl-location"><i class="fas fa-map-marker-alt"></i> Prabhakar Nagar</p>
+              </div>
+              <div class="tl-header-right">
+                <span class="tl-duration"><i class="fas fa-calendar-alt"></i> 2023 – 2024</span>
+                <span class="tl-badge">Completed</span>
+              </div>
+            </div>
+            <div class="tl-divider"></div>
+            <div class="timeline-card-body">
+              <div class="tl-info-row">
+                <span class="tl-label">Qualification:</span>
+                <span class="tl-value placeholder-inline">[YOUR QUALIFICATION — e.g., SSC / 10th Standard]</span>
+              </div>
+              <p class="tl-description">
+                <span class="placeholder-inline">[ADD SCHOOL DETAILS — e.g., Completed Secondary School Certificate from ZPPH School, Prabhakar Nagar with a strong foundation in Mathematics and Sciences.]</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- College -->
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-dot" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="tl-header-left">
+                <span class="tl-type">Diploma in Engineering</span>
+                <h3 class="tl-institution">Aditya Polytechnic College</h3>
+                <p class="tl-location"><i class="fas fa-map-marker-alt"></i> Surampalem</p>
+              </div>
+              <div class="tl-header-right">
+                <span class="tl-duration"><i class="fas fa-calendar-alt"></i> <span class="placeholder-inline">[START YEAR]</span> – Present</span>
+                <span class="tl-badge pursuing">Pursuing</span>
+              </div>
+            </div>
+            <div class="tl-divider"></div>
+            <div class="timeline-card-body">
+              <div class="tl-info-row">
+                <span class="tl-label">Course:</span>
+                <span class="tl-value">Diploma – 3rd Year</span>
+              </div>
+              <div class="tl-info-row">
+                <span class="tl-label">Branch:</span>
+                <span class="tl-value placeholder-inline">[YOUR BRANCH]</span>
+              </div>
+              <p class="tl-description">
+                Currently pursuing 3rd year Diploma at Aditya Polytechnic College, Surampalem.
+                Actively building skills in programming, web development, and data analysis through
+                coursework and hands-on projects.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills-section" id="skills" aria-label="Skills">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="accent-text">Skills</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-wrapper">
+
+        <!-- Technical Skills -->
+        <div class="skills-group" data-aos="fade-up">
+          <h3 class="skills-group-title"><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+          <div class="skills-grid">
+
+            <div class="skill-card">
+              <div class="skill-icon html-icon"><i class="fab fa-html5"></i></div>
+              <span class="skill-name">HTML5</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon css-icon"><i class="fab fa-css3-alt"></i></div>
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon bs-icon"><i class="fab fa-bootstrap"></i></div>
+              <span class="skill-name">Bootstrap</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon js-icon"><i class="fab fa-js-square"></i></div>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon py-icon"><i class="fab fa-python"></i></div>
+              <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon text-icon c-icon">
+                <span>C</span>
+              </div>
+              <span class="skill-name">C</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon text-icon cpp-icon">
+                <span>C++</span>
+              </div>
+              <span class="skill-name">C++</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon text-icon sql-icon">
+                <span>SQL</span>
+              </div>
+              <span class="skill-name">SQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon django-icon"><i class="fab fa-python"></i></div>
+              <span class="skill-name">Django</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon text-icon numpy-icon">
+                <span>NP</span>
+              </div>
+              <span class="skill-name">NumPy</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon text-icon mpl-icon">
+                <span>MPL</span>
+              </div>
+              <span class="skill-name">Matplotlib</span>
+            </div>
+
+            <!-- Add More Placeholder -->
+            <div class="skill-card add-more-card" title="Add your skills here">
+              <div class="skill-icon add-icon"><i class="fas fa-plus-circle"></i></div>
+              <span class="skill-name">[Add Skill]</span>
+            </div>
+            <div class="skill-card add-more-card" title="Add your skills here">
+              <div class="skill-icon add-icon"><i class="fas fa-plus-circle"></i></div>
+              <span class="skill-name">[Add Skill]</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-group-title"><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="soft-skills-grid">
+
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <div class="soft-skill-text">
+                <span class="soft-skill-name">Problem Solving</span>
+                <span class="soft-skill-desc">Analytical &amp; logical thinking</span>
+              </div>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+              <div class="soft-skill-text">
+                <span class="soft-skill-name">Communication</span>
+                <span class="soft-skill-desc">Clear &amp; effective expression</span>
+              </div>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fas fa-people-group"></i></div>
+              <div class="soft-skill-text">
+                <span class="soft-skill-name">Teamwork</span>
+                <span class="soft-skill-desc">Collaborative &amp; supportive</span>
+              </div>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fas fa-clock"></i></div>
+              <div class="soft-skill-text">
+                <span class="soft-skill-name">Time Management</span>
+                <span class="soft-skill-desc">Organised &amp; deadline-driven</span>
+              </div>
+            </div>
+            <div class="soft-skill-card add-more-soft" title="Add more soft skills here">
+              <div class="soft-skill-icon"><i class="fas fa-plus-circle"></i></div>
+              <div class="soft-skill-text">
+                <span class="soft-skill-name">[Add Skill]</span>
+                <span class="soft-skill-desc">Your soft skill here</span>
+              </div>
+            </div>
+            <div class="soft-skill-card add-more-soft" title="Add more soft skills here">
+              <div class="soft-skill-icon"><i class="fas fa-plus-circle"></i></div>
+              <div class="soft-skill-text">
+                <span class="soft-skill-name">[Add Skill]</span>
+                <span class="soft-skill-desc">Your soft skill here</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /skills-wrapper -->
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects-section" id="projects" aria-label="Projects">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="accent-text">Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── PROJECT 1: Crime Data Analysis ── -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="50" aria-label="Crime Data Analysis Prediction System">
+          <div class="project-image-wrapper">
+            <img
+              src="assets/project_crime_analysis.png"
+              alt="Crime Data Analysis Prediction System Dashboard"
+              class="project-image"
+              loading="lazy"
+            />
+            <div class="project-overlay" aria-hidden="true">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="crimeLiveLink" title="View Live Project" target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="overlay-btn" id="crimeGithubLink" title="View on GitHub" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <span class="project-number" aria-hidden="true">01</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-tags">
+              <!-- PLACEHOLDER: Replace with your actual technologies -->
+              <span class="project-tag">[Python]</span>
+              <span class="project-tag">[Django]</span>
+              <span class="project-tag">[Matplotlib]</span>
+              <span class="project-tag">[NumPy]</span>
+            </div>
+            <h3 class="project-title">Crime Data Analysis<br />Prediction System</h3>
+            <p class="project-description">
+              <!-- PLACEHOLDER: Replace with actual description -->
+              <span class="placeholder-text">✏️ [Write your project description here — e.g., "A data analytics system that processes crime datasets, visualises patterns through interactive charts, and predicts future trends using Python, Django, and data science libraries."]</span>
+            </p>
+            <div class="project-features">
+              <h4 class="features-title">Key Features</h4>
+              <ul class="features-list">
+                <!-- PLACEHOLDER: Replace with your actual features -->
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="placeholder-inline">[Feature 1 — e.g., Crime data visualisation with charts]</span></li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="placeholder-inline">[Feature 2 — e.g., Predictive trend analytics]</span></li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="placeholder-inline">[Feature 3 — e.g., Interactive heatmaps &amp; graphs]</span></li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="placeholder-inline">[Feature 4 — e.g., Region &amp; time-based data filtering]</span></li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-primary btn-sm" id="crimeViewBtn" target="_blank" rel="noopener">
+                <i class="fas fa-eye"></i> View Project
+              </a>
+              <a href="#" class="btn btn-outline btn-sm" id="crimeGithubBtn" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 2: JR Interior Designs ── -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="150" aria-label="JR Interior Designs Website">
+          <div class="project-image-wrapper">
+            <img
+              src="assets/project_interior_design.png"
+              alt="JR Interior Designs Website"
+              class="project-image"
+              loading="lazy"
+            />
+            <div class="project-overlay" aria-hidden="true">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="interiorLiveLink" title="View Live Website" target="_blank" rel="noopener">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="overlay-btn" id="interiorGithubLink" title="View on GitHub" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <span class="project-number" aria-hidden="true">02</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-tags">
+              <!-- PLACEHOLDER: Replace with your actual technologies -->
+              <span class="project-tag">[HTML]</span>
+              <span class="project-tag">[CSS]</span>
+              <span class="project-tag">[JavaScript]</span>
+              <span class="project-tag">[Bootstrap]</span>
+            </div>
+            <h3 class="project-title">JR Interior Designs<br />Website</h3>
+            <p class="project-description">
+              Designed and developed a professional website for JR Interior Designs —
+              showcasing their services, gallery, and contact information in a modern,
+              visually appealing, and fully responsive format.
+            </p>
+            <div class="project-features">
+              <h4 class="features-title">Key Features</h4>
+              <ul class="features-list">
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Modern interior design presentation</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Fully responsive design (mobile-first)</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Services &amp; Portfolio gallery sections</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Contact form integration</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="placeholder-inline">[Add More Features]</span></li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-primary btn-sm" id="interiorViewBtn" target="_blank" rel="noopener">
+                <i class="fas fa-eye"></i> Live Website
+              </a>
+              <a href="#" class="btn btn-outline btn-sm" id="interiorGithubBtn" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section certifications-section" id="certifications" aria-label="Certifications">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Credentials</span>
+        <h2 class="section-title">Certifi<span class="accent-text">cations</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Courses and certifications I have completed.</p>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- Cert 1 -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="cert-icon-wrapper" aria-hidden="true">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="cert-content">
+            <span class="cert-org placeholder-inline">[ORGANIZATION NAME]</span>
+            <h3 class="cert-name placeholder-inline">[YOUR CERTIFICATE NAME]</h3>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span class="placeholder-inline">[DATE — e.g., Jan 2025]</span></span>
+            </div>
+          </div>
+          <a href="#" class="cert-link" id="cert1Link" target="_blank" rel="noopener" title="View Certificate 1">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate
+          </a>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-icon-wrapper" aria-hidden="true">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="cert-content">
+            <span class="cert-org placeholder-inline">[ORGANIZATION NAME]</span>
+            <h3 class="cert-name placeholder-inline">[YOUR CERTIFICATE NAME]</h3>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span class="placeholder-inline">[DATE — e.g., Mar 2025]</span></span>
+            </div>
+          </div>
+          <a href="#" class="cert-link" id="cert2Link" target="_blank" rel="noopener" title="View Certificate 2">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Certificate
+          </a>
+        </div>
+
+        <!--
+          ╔══════════════════════════════════════════════════════════════╗
+          ║  ADD MORE CERTIFICATIONS                                     ║
+          ║  Copy the block below and paste it inside .certs-grid        ║
+          ╚══════════════════════════════════════════════════════════════╝
+
+          <div class="cert-card" data-aos="fade-up">
+            <div class="cert-icon-wrapper">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-org">ORGANIZATION NAME</span>
+              <h3 class="cert-name">Certificate Name</h3>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fas fa-calendar"></i> Month Year</span>
+              </div>
+            </div>
+            <a href="YOUR_CERT_URL" class="cert-link" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt"></i> View Certificate
+            </a>
+          </div>
+        -->
+
+        <!-- Template / Add More Card -->
+        <div class="cert-card cert-add-card" data-aos="fade-up" data-aos-delay="150" title="Duplicate this card to add more certifications">
+          <div class="cert-icon-wrapper add-icon" aria-hidden="true">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="cert-content">
+            <span class="cert-org">Add New</span>
+            <h3 class="cert-name">+ Add Certification</h3>
+            <div class="cert-meta">
+              <span class="cert-date" style="color:var(--text-muted);font-style:italic;">Copy the HTML comment above</span>
+            </div>
+          </div>
+          <span class="cert-link add-cert-note" aria-hidden="true">
+            <i class="fas fa-info-circle"></i> Template Card
+          </span>
+        </div>
+
+      </div><!-- /certs-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact-section" id="contact" aria-label="Contact">
+    <div class="container">
+
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent-text">Me</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Have a question, collaboration idea, or opportunity? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info Column -->
+        <div class="contact-info-col" data-aos="fade-right">
+          <h3 class="contact-info-title">Let's Talk 👋</h3>
+          <p class="contact-info-text">
+            Feel free to reach out for collaborations, project discussions, or any
+            opportunities. I am always open to connecting with new people!
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-box" aria-hidden="true"><i class="fas fa-phone"></i></div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Phone</span>
+                <a href="tel:+917670953307" class="contact-item-value">+91 76709 53307</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-box" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Email</span>
+                <!-- PLACEHOLDER: Replace with your actual email -->
+                <a href="mailto:[YOUR EMAIL]" class="contact-item-value placeholder-inline" id="contactEmailLink">[YOUR EMAIL ADDRESS]</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-box" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value placeholder-inline">[YOUR LOCATION]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <h4 class="socials-label">Connect With Me</h4>
+            <div class="social-links-row">
+              <a href="#" class="social-link-btn" id="contactGithub"   title="GitHub"   aria-label="GitHub"   target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link-btn" id="contactLinkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:" class="social-link-btn" id="contactEmailBtn" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="social-link-btn" id="contactSocial"   title="Other Social" aria-label="Other Social" target="_blank" rel="noopener"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-col" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" novalidate autocomplete="off">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user input-icon" aria-hidden="true"></i>
+                  <input type="text"  id="contactName"    name="name"    class="form-input" placeholder="Enter your name"  required minlength="2" />
+                </div>
+                <span class="form-error" id="nameError"    role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+                  <input type="email" id="contactEmail"   name="email"   class="form-input" placeholder="Enter your email" required />
+                </div>
+                <span class="form-error" id="emailError"   role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <div class="input-wrapper">
+                <i class="fas fa-tag input-icon" aria-hidden="true"></i>
+                <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="What is this about?" required minlength="3" />
+              </div>
+              <span class="form-error" id="subjectError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-message input-icon textarea-icon" aria-hidden="true"></i>
+                <textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="Write your message here..." rows="5" required minlength="10"></textarea>
+              </div>
+              <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text"><i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;" aria-label="Sending..."><i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending…</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none;" role="status" aria-live="polite">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              Your message was sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="Back to top">
+            <span class="logo-first">Reshma</span><span class="logo-last">.dev</span>
+          </a>
+          <p class="footer-tagline">Reshma Devi Sri Penta</p>
+          <p class="footer-desc">Diploma Student &amp; Aspiring Developer<br />Aditya Polytechnic College, Surampalem</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav" aria-label="Footer navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-social-icons" aria-label="Social links">
+            <a href="#" class="footer-social-icon" id="footerGithub"   title="GitHub"   aria-label="GitHub"   target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="#" class="footer-social-icon" id="footerLinkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:" class="footer-social-icon" id="footerEmail" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <p class="footer-contact-note">📞 +91 76709 53307</p>
+        </div>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Reshma Devi Sri Penta. All Rights Reserved.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+          <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div><!-- /footer-container -->
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
